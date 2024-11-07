@@ -8,7 +8,7 @@ GO
 SELECT S.CompanyName,COUNT(P.SupplierID) AS 'TOTAL_PRODUCTS' FROM Products P 
 INNER JOIN Suppliers S 
 ON P.SupplierID = S.SupplierID 
-WHERE S.CompanyName = 'Exotic Liquids'
+
 GROUP BY S.CompanyName
 
 GO
